@@ -14,6 +14,7 @@ header {
     top: 0;
     left: 0;
     position: sticky;
+    z-index: 100;
 }
 header .navbar {
     background: linear-gradient(to right, #4eda0c, #acfddb);
@@ -21,7 +22,20 @@ header .navbar {
 header .navbar .navbar-brand {
     margin: 10px;
     color: #fff;
+    margin-left: -400px;
+    opacity: 0;
     font-size: 25px;
+    animation: navbar-brand 2s forwards;
+}
+@keyframes navbar-brand {
+    0% {
+        margin: -400px;
+        opacity: 0;
+    }
+    100% {
+        margin: 0px;
+        opacity: 1;
+    }
 }
 header .navbar .navbar-nav {
     margin: 10px;
@@ -29,10 +43,23 @@ header .navbar .navbar-nav {
 header .navbar .navbar-nav .nav-item {
     display: inline-block;
     padding: 8px;
+    margin-top: 50px;
+    opacity: 0;
+    animation: nav-item 2s forwards;
 }
 header .navbar .navbar-nav .nav-item .nav-link {
     color: #333;
     font-size: 18px;
+}
+@keyframes nav-item {
+    0% {
+        margin-top: 50px;
+        opacity: 0;
+    }
+    100% {
+        margin-top: 0px;
+        opacity: 1;
+    }
 }
 header .navbar .navbar-nav .nav-item:hover .nav-link {
     color: #70da0c;
@@ -41,7 +68,19 @@ header .navbar .navbar-nav .nav-item:hover .nav-link {
     width: 100%;
     height: 80vh;
     background: linear-gradient(to left, #4eda0c, #acfddb);
+    opacity: 0;
     padding: 50px;
+    animation-name: home;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes home {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 #home .banner-text h2 {
     font-size: 50px;
