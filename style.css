@@ -106,6 +106,9 @@ header .navbar .navbar-nav .nav-item:hover .nav-link {
 #about .container .col-md-6 {
     margin-top: 30px;
 }
+#about .container .about-box {
+    margin-top: 30px;
+}
 #about .container .about-box .about-logo h2 span { 
     color: #4eda0c;
 }
