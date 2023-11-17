@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+.container {
+    margin-top: 150px;
+}
+header {
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    position: sticky;
+}
+header .navbar {
+    background: linear-gradient(to right, #4eda0c, #acfddb);
+}
+header .navbar .navbar-brand {
+    margin: 10px;
+    color: #fff;
+    font-size: 25px;
+}
+header .navbar .navbar-nav {
+    margin: 10px;
+}
+header .navbar .navbar-nav .nav-item {
+    display: inline-block;
+    padding: 8px;
+}
+header .navbar .navbar-nav .nav-item .nav-link {
+    color: #333;
+    font-size: 18px;
+}
+header .navbar .navbar-nav .nav-item:hover .nav-link {
+    color: #70da0c;
+}
+#home {
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(to left, #4eda0c, #acfddb);
+    padding: 50px;
+}
+#home .banner-text h2 {
+    font-size: 50px;
+    color: #fff;
+    padding-left: 10px;
+}
+#home .banner-text h3 {
+    color: #70da0c;
+    font-size: 20px;
+    padding: 3px 10px 5px 10px;
+}
+#home .banner-text p {
+    font-size: 15px;
+    color: #333;
+    padding: 5px 10px 10px 10px;
+}
+#home .banner-text .btn {
+    margin: 10px;
+}
+#about .container .logo {
+    margin: 10px;
+}
+#about .container .col-md-6 {
+    margin-top: 30px;
+}
+#about .container .about-box .about-logo h2 span { 
+    color: #4eda0c;
+}
+#about .container .image-container img {
+    width: 400px;
+}
+#blog .col-lg-4 {
+    margin-top: 30px;
+}
+#blog .blog-container {
+    width: 300px;
+    max-width: 100%;
+    box-shadow: 2px 1px 3px 2px rgba(0,0,0,0.2);
+    margin: 10px auto;
+}
+#blog .blog-container .image-container img {
+    width: 100%;
+}
+#blog .blog-container .blog-details .blog-details-logo h2 {
+    padding-top: 10px;
+    padding-left: 8px;
+    font-size: 25px;
+}
+#blog .blog-container .blog-details p {
+    padding-top: 10px;
+    padding-left: 8px;
+    font-size: 15px;
+    color: #555;
+}
+#blog .blog-container .blog-details .btn {
+    margin: 10px;
+}
